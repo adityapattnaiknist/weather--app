@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Weather App</title>
   <link rel="stylesheet" href="style.css"/>
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
 </head>
 <body>
   <div class="container">
@@ -13,7 +14,19 @@
     <div id="weatherResult" class="weather-result">
       <!-- Weather info appears here -->
     </div>
+    <div id="world-clock">
+      <h2>World Clock</h2>
+      <select id="timezone-select">
+        <option value="UTC">UTC</option>
+        <option value="America/New_York">New York</option>
+        <option value="Europe/London">London</option>
+        <option value="Asia/Tokyo">Tokyo</option>
+      </select>
+      <div id="clock"></div>
+    </div>
+    <div id="map"></div>
   </div>
+  <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
   <script src="script.js"></script>
 </body>
 </html>
