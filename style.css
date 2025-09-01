@@ -32,4 +32,13 @@ body {
   .weather-result {
     margin-top: 20px;
   }
+
+#map {
+  height: 300px;
+  margin-top: 20px;
+}
+
+#world-clock {
+  margin-top: 20px;
+}
   
